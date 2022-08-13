@@ -44,9 +44,9 @@
 
     function addScrollListener(ele) {
       ele.addEventListener("scroll", () => {
-        if (scroller.scrollTop >= 677) {
+        if (ele.scrollTop >= 677) {
           document.body.classList.add("enabled-userscript");
-        } else if (scroller.scrollTop < 460) {
+        } else if (ele.scrollTop < 460) {
           document.body.classList.remove("enabled-userscript");
         }
       });
