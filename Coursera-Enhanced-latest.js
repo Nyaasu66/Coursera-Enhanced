@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name                Coursera-Enhanced
-// @name:zh-CN          Coursera-Enhanced
+// @name:zh-CN          Coursera 小窗放大 隐藏侧栏
 // @description         Auto-hide sidebar, bigger small window
 // @description:zh-TW   自動隱藏側邊欄，更大的小窗
 // @description:zh-HK   自動隱藏側邊欄，更大的小窗
