@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name                Coursera-Enhanced
 // @name:zh-CN          Coursera-Enhanced
-// @description         User Script for better layout.
-// @description:zh-TW   User Script for better layout.
-// @description:zh-HK   User Script for better layout.
-// @description:zh-CN   User Script for better layout.
+// @description         Auto-hide sidebar, bigger small window
+// @description:zh-TW   自動隱藏側邊欄，更大的小窗
+// @description:zh-HK   自動隱藏側邊欄，更大的小窗
+// @description:zh-CN   自动隐藏侧边栏，更大的小窗
+// @description:en-US   Auto-hide sidebar, bigger small window
+// @description:en-UK   Auto-hide sidebar, bigger small window
 
 // @namespace    https://github.com/Nyaasu66/Coursera-Enhanced
 // @version      0.0.1
@@ -75,26 +77,6 @@
     }
   `;
     document.head.appendChild(style);
-    // resize();
-    // setTimeout(() => {
-    //   resize();
-    // }, 800);
-    // 屏宽适配
-
-    // function resize() {
-    //   var result1 = window.matchMedia("(min-width:1220px)");
-    //   var result2 = window.matchMedia("(min-width:1020px)");
-    //   if (result1.matches) {
-    //     console.log("大屏宽，恢复原样式");
-    //   } else if (result2.matches) {
-    //     console.log("中屏宽，减小mainBox宽度");
-    //   } else {
-    //     console.log("小屏宽，隐藏右侧信息栏，mainBox居中");
-    //   }
-    // }
-    // window.addEventListener("resize", function () {
-    //   resize();
-    // });
   } catch (e) {
     console.warn("脚本错误:\n", e);
   }
