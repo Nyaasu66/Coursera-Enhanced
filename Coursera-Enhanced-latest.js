@@ -33,30 +33,45 @@
       padding: "1px",
     };
     Object.assign(btn.style, btnStyle);
-
     btn.textContent = "H";
     btn.onclick = hide;
 
     setTimeout(() => {
+      hide();
       document.querySelector("body").appendChild(btn);
-    }, 8000);
+      addScrollListener(document.querySelector(".ItemPageLayout_content_body"));
+    }, 5000);
+
+    function addScrollListener(ele) {
+      ele.addEventListener("scroll", () => {
+        if (scroller.scrollTop >= 677) {
+          document.body.classList.add("enabled-userscript");
+        } else if (scroller.scrollTop < 460) {
+          document.body.classList.remove("enabled-userscript");
+        }
+      });
+    }
+
     function hide() {
-      side == "none"
+      side === "none"
         ? ((side = "block"), (btn.textContent = "H"))
         : ((side = "none"), (btn.textContent = "S"));
-      if (location.host === "lanhuapp.com") {
-        document.querySelector("#prototypeSidebar").style.display = side;
-      } else if (location.host === "www.coursera.org") {
-        document.querySelector(
-          ".ItemPageLayout_content_navigation"
-        ).style.display = side;
-      }
+
+      document.querySelector(
+        ".ItemPageLayout_content_navigation"
+      ).style.display = side;
     }
 
     // CSS
     const style = document.createElement("style");
     style.innerHTML = `
-    .ItemPageLayout_content_navigation {
+
+    .enabled-userscript .rc-VideoMiniPlayer.mini .rc-VideoMiniControls, .rc-VideoMiniPlayer.mini .video-main-player-container {
+      width: 820px;
+    }
+
+    .enabled-userscript .ItemPageLayout_content_body {
+      margin-left: -170px
     }
   `;
     document.head.appendChild(style);
