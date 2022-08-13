@@ -1,12 +1,14 @@
 // ==UserScript==
-// @name                Coursera-Enhanced
+// @name                Coursera 小窗放大 隐藏侧栏
 // @name:zh-CN          Coursera 小窗放大 隐藏侧栏
-// @description         Auto-hide sidebar, bigger small window
+// @name:zh-TK          Coursera 小窗放大 隱藏側欄
+// @name:zh-HK          Coursera 小窗放大 隱藏側欄
+// @name:en             Coursera-Enhanced
+// @description         自动隐藏侧边栏，更大的小窗
+// @description:zh-CN   自动隐藏侧边栏，更大的小窗
 // @description:zh-TW   自動隱藏側邊欄，更大的小窗
 // @description:zh-HK   自動隱藏側邊欄，更大的小窗
-// @description:zh-CN   自动隐藏侧边栏，更大的小窗
-// @description:en-US   Auto-hide sidebar, bigger small window
-// @description:en-UK   Auto-hide sidebar, bigger small window
+// @description:en      Auto-hide sidebar, bigger small window
 
 // @namespace    https://github.com/Nyaasu66/Coursera-Enhanced
 // @version      0.0.1
